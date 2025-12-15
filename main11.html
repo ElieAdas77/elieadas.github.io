@@ -1,0 +1,413 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Real Estate Website</title>
+
+    <link rel="stylesheet" href="main22.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"
+    />
+    <!-- lal icons -->
+  </head>
+
+  <body>
+    <!-- Navigation Bar -->
+    <header class="header">
+      <div class="logo">PrimeEstates</div>
+      <nav>
+        <a href="#properties">Properties</a>
+        <a href="#about">About</a>
+        <a href="#contact">Contact</a>
+      </nav>
+    </header>
+
+    <!-- Section 2: Title Only -->
+    <section id="hero">
+      <div class="slideshow-container">
+        <div
+          class="slide-image active-slide"
+          style="background-image: url('heroooo.jpg')"
+        ></div>
+        <div
+          class="slide-image"
+          style="background-image: url('herro22222.jpeg')"
+        ></div>
+        <div
+          class="slide-image"
+          style="background-image: url('hero3333.jpeg')"
+        ></div>
+        <div
+          class="slide-image"
+          style="background-image: url('herop444.jpeg')"
+        ></div>
+      </div>
+
+      <div class="hero-overlay"></div>
+
+      <div class="hero-content fade-in">
+        <h1 class="hero-title">
+          Let us bring the <span>world</span> to your door ...
+        </h1>
+        <p>
+          Find premium properties, rentals, and investments with full trusted
+          guidance.
+        </p>
+        <a href="#about" class="hero-btn">Why choose PrimeEstates</a>
+      </div>
+    </section>
+
+    <!-- -------------**********************--------------- -->
+
+    <!-- Section 3: Properties -->
+    <section id="properties">
+      <h2>Featured Properties</h2>
+
+      <!-- Toggle Buttons -->
+      <div class="toggle-buttons">
+        <button id="btnSale" class="active">For Sale</button>
+        <button id="btnRent">For Rent</button>
+      </div>
+
+      <!-- FOR SALE PROPERTIES -->
+      <div id="saleProperties" class="property-list">
+        <!-- 4 Sale Cards -->
+        <!--data-(...) is hidden data to be added in the modal pop up in javascript-->
+        <div
+          class="property-card fade-in"
+          data-location="Beirut"
+          data-price="$250,000"
+          data-size="180m²"
+          data-bedrooms="3"
+          data-extras="Garden"
+          data-description="This modern family house in Beirut offers spacious living areas filled with natural light. Enjoy a peaceful garden, a balcony for relaxing evenings, and a contemporary design perfect for family life."
+        >
+          <img src="01.webp" />
+          <h3>Modern Family House</h3>
+          <p>Location: Beirut</p>
+          <p>Price: $250,000</p>
+          <div class="icons">
+            <!--iconssssssssssssssssssssssssssssssssssssssssss-->
+            <span><i class="fa-solid fa-bed"></i>3</span>
+            <span><i class="fa-solid fa-bath"></i>2</span>
+            <span
+              ><i class="fa-solid fa-ruler-combined">180m<sup>2</sup></i></span
+            >
+          </div>
+          <button>View Details</button>
+          <button class="inquire-btn">Inquire</button>
+        </div>
+
+        <!--data-(...) is hidden data to be added in the modal pop up in javascript-->
+        <div
+          class="property-card fade-in"
+          data-location="Jounieh"
+          data-price="$850,000"
+          data-size="450m²"
+          data-bedrooms="5"
+          data-extras="Pool, Garden"
+          data-description="A luxurious villa in Jounieh with a private pool, large garage, and beautifully landscaped garden. This villa features elegant interiors, expansive living spaces, and is ideal for entertaining guests or enjoying a quiet retreat."
+        >
+          <img src="property2.jpg" />
+          <h3>Luxury Villa</h3>
+          <p>Location: Jounieh</p>
+          <p>Price: $850,000</p>
+          <div class="icons">
+            <!--iconssssssssssssssssssssssssssssssssssssssssss-->
+            <span><i class="fa-solid fa-bed"></i>5</span>
+            <span><i class="fa-solid fa-bath"></i>4</span>
+            <span
+              ><i class="fa-solid fa-ruler-combined">450m<sup>2</sup></i></span
+            >
+          </div>
+          <button>View Details</button>
+          <button class="inquire-btn">Inquire</button>
+        </div>
+
+        <!--data-(...) is hidden data to be added in the modal pop up in javascript-->
+        <div
+          class="property-card fade-in"
+          data-location="Tripoli"
+          data-price="$120,000"
+          data-size="90m²"
+          data-bedrooms="2"
+          data-extras="Balcony"
+          data-description="Cozy apartment in Tripoli offering a bright and airy interior. Features two comfortable bedrooms, a modern kitchen, and a balcony with great city views. Perfect for a small family or professionals."
+        >
+          <img src="propp3.jpeg" />
+          <h3>Cozy Apartment</h3>
+          <p>Location: Tripoli</p>
+          <p>Price: $120,000</p>
+          <div class="icons">
+            <!--iconssssssssssssssssssssssssssssssssssssssssss-->
+            <span><i class="fa-solid fa-bed"></i>2</span>
+            <span><i class="fa-solid fa-bath"></i>2</span>
+            <span
+              ><i class="fa-solid fa-ruler-combined">90m<sup>2</sup></i></span
+            >
+          </div>
+          <button>View Details</button>
+          <button class="inquire-btn">Inquire</button>
+        </div>
+
+        <!--data-(...) is hidden data to be added in the modal pop up in javascript-->
+        <div
+          class="property-card fade-in"
+          data-location="Beirut"
+          data-price="$310,000"
+          data-size="140m²"
+          data-bedrooms="3"
+          data-extras="City View"
+          data-description="City view apartment in Beirut featuring stylish interiors and three well-sized bedrooms. Enjoy a panoramic cityscape from your living room, with modern amenities and a convenient central location."
+        >
+          <img src="prop44444.jpeg" />
+          <h3>City View Apartment</h3>
+          <p>Location: Beirut</p>
+          <p>Price: $310,000</p>
+          <div class="icons">
+            <!--iconssssssssssssssssssssssssssssssssssssssssss-->
+            <span><i class="fa-solid fa-bed"></i>3</span>
+            <span><i class="fa-solid fa-bath"></i>2</span>
+            <span
+              ><i class="fa-solid fa-ruler-combined">140m<sup>2</sup></i></span
+            >
+          </div>
+          <button>View Details</button>
+          <button class="inquire-btn">Inquire</button>
+        </div>
+      </div>
+
+      <!-- FOR RENT PROPERTIES************** -->
+      <div id="rentProperties" class="property-list hidden">
+        <!--data-(...) is hidden data to be added in the modal pop up in javascript-->
+        <div
+          class="property-card fade-in"
+          data-location="Achrafieh"
+          data-price="$700/Month"
+          data-size="80m²"
+          data-bedrooms="2"
+          data-extras="Furnished"
+          data-description="Fully furnished apartment in Achrafieh with modern décor and two comfortable bedrooms. Ideal for professionals or small families, it offers a convenient location and move-in ready comfort."
+        >
+          <img src="rent1.jpeg" />
+          <h3>Furnished Apartment</h3>
+          <p>Location: Achrafieh</p>
+          <p>Price: $700 / Month</p>
+          <div class="icons">
+            <!--iconssssssssssssssssssssssssssssssssssssssssss-->
+            <span><i class="fa-solid fa-bed"></i>2</span>
+            <span><i class="fa-solid fa-bath"></i>2</span>
+            <span
+              ><i class="fa-solid fa-ruler-combined">80m<sup>2</sup></i></span
+            >
+          </div>
+          <button>View Details</button>
+          <button class="inquire-btn">Inquire</button>
+        </div>
+
+        <!--data-(...) is hidden data to be added in the modal pop up in javascript-->
+        <div
+          class="property-card fade-in"
+          data-location="Hamra"
+          data-price="$450/Month"
+          data-size="50m²"
+          data-bedrooms="1"
+          data-extras="Studio"
+          data-description="Compact studio apartment in Hamra, perfect for students or singles. Cozy interior with functional design and all the essentials for comfortable city living."
+        >
+          <img src="rent2.jpeg" />
+          <h3>Studio Apartment</h3>
+          <p>Location: Hamra</p>
+          <p>Price: $450 / Month</p>
+          <div class="icons">
+            <!--iconssssssssssssssssssssssssssssssssssssssssss-->
+            <span><i class="fa-solid fa-bed"></i>2</span>
+            <span><i class="fa-solid fa-bath"></i>1</span>
+            <span
+              ><i class="fa-solid fa-ruler-combined">50m<sup>2</sup></i></span
+            >
+          </div>
+          <button>View Details</button>
+          <button class="inquire-btn">Inquire</button>
+        </div>
+
+        <!--data-(...) is hidden data to be added in the modal pop up in javascript-->
+        <div
+          class="property-card fade-in"
+          data-location="Batroun"
+          data-price="$900/Month"
+          data-size="110m²"
+          data-bedrooms="3"
+          data-extras="Seaview"
+          data-description="Seaview apartment in Batroun with three bedrooms and a spacious living area. Enjoy breathtaking sea views from the balcony, modern interiors, and a serene coastal location."
+        >
+          <img src="rent3.jpg" />
+          <h3>Seaview Apartment</h3>
+          <p>Location: Batroun</p>
+          <p>Price: $900 / Month</p>
+          <div class="icons">
+            <!--iconssssssssssssssssssssssssssssssssssssssssss-->
+            <span><i class="fa-solid fa-bed"></i>3</span>
+            <span><i class="fa-solid fa-bath"></i>2</span>
+            <span
+              ><i class="fa-solid fa-ruler-combined">110m<sup>2</sup></i></span
+            >
+          </div>
+          <button>View Details</button>
+          <button class="inquire-btn">Inquire</button>
+        </div>
+
+        <!--data-(...) is hidden data to be added in the modal pop up in javascript-->
+        <div
+          class="property-card fade-in"
+          data-location="Downtown Beirut"
+          data-price="$1200/Month"
+          data-size="180m²"
+          data-bedrooms="4"
+          data-extras="Luxury, Terrace"
+          data-description="Luxury rental suite in Downtown Beirut featuring four bedrooms, a private terrace, and premium finishes. Perfect for families or professionals seeking a stylish and central residence with modern amenities."
+        >
+          <img src="rent4.jpeg" />
+          <h3>Luxury Rental Suite</h3>
+          <p>Location: Downtown Beirut</p>
+          <p>Price: $1200 / Month</p>
+          <div class="icons">
+            <!--iconssssssssssssssssssssssssssssssssssssssssss-->
+            <span><i class="fa-solid fa-bed"></i>4</span>
+            <span><i class="fa-solid fa-bath"></i>3</span>
+            <span
+              ><i class="fa-solid fa-ruler-combined">180m<sup>2</sup></i></span
+            >
+          </div>
+          <button>View Details</button>
+          <button class="inquire-btn">Inquire</button>
+        </div>
+      </div>
+    </section>
+
+    <!-- Section 4: About Us -->
+    <section id="about">
+      <h2>Why Choose PrimeEstates?</h2>
+      <div class="card-container">
+        <div class="content-card fade-in">
+          <div class="card-image card-image-1"></div>
+          <div class="card-text-box">
+            <h3>Our Mission Statement</h3>
+            <p>
+              PrimeEstates is dedicated to redefining real estate through
+              exceptional service, integrity, and local expertise. We strive to
+              make every client's property journey seamless and successful.
+            </p>
+          </div>
+        </div>
+        <div class="content-card fade-in">
+          <div class="card-image card-image-2"></div>
+          <div class="card-text-box">
+            <h3>Local Experts, Global Reach</h3>
+            <p>
+              Our team consists of highly-trained local specialists who provide
+              deep market insights. We combine this expertise with a network
+              that offers unparalleled opportunities, locally and abroad.
+            </p>
+          </div>
+        </div>
+        <div class="content-card fade-in">
+          <div class="card-image card-image-3"></div>
+          <div class="card-text-box">
+            <h3>The Prime Difference</h3>
+            <p>
+              We believe in building lasting relationships. Our commitment is to
+              treat every client like family, ensuring you receive personalized
+              advice and the best possible outcome for your investment.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- reviewsssssssssss--------------------------->
+    <section id="testimonial">
+      <h2 class="section-title">What Our Customers Think</h2>
+
+      <div class="testimonial-wrapper">
+        <div class="testimonial-card fade-in">
+          <div class="stars">★★★★★</div>
+          <p>
+            Thank you, PrimeEstates, and especially Rachelle Fahed. I hope to
+            work with you again in the near future and will definitely recommend
+            you to my friends.
+          </p>
+          <span class="author">Jean Rhana</span>
+          <span class="date">Dec 2025</span>
+        </div>
+
+        <div class="testimonial-card fade-in">
+          <div class="stars">★★★★★</div>
+          <p>
+            A very special thanks here to Carl without whom this would have not
+            been possible.
+          </p>
+          <span class="author">Shorfi Samnoul</span>
+          <span class="date">Dec 2025</span>
+        </div>
+
+        <div class="testimonial-card fade-in">
+          <div class="stars">★★★★★</div>
+          <p>
+            I would like to thank you and especially express my sincere
+            appreciation to john who did an excellent job helping us rent this
+            facility.
+          </p>
+          <span class="author">Hady Khoury</span>
+          <span class="date">Oct 2025</span>
+        </div>
+      </div>
+    </section>
+
+    <!-- Section 5: Contact Us -->
+    <section id="contact">
+      <h2>Contact Us</h2>
+      <p>📍 Beirut, Lebanon</p>
+      <p>✉️ prime@estates.com</p>
+      <p>📞 +961 76 654 131</p>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+      <p>© 2025 PrimeEstates. All Rights Reserved.</p>
+    </footer>
+
+    <!-- Modal pops up -->
+    <div id="propertyModal" class="modal hidden">
+      <div class="modal-content">
+        <!-- Close button ( the X icon) -->
+        <span class="close-modal">&times;</span>
+
+        <!-- Image that will change depending on the property I clicked -->
+        <img id="modalImg" src="" alt="Property Image" />
+
+        <!-- These will get filled automatically (copying details using js)-->
+        <h3 id="modalTitle"></h3>
+        <p id="modalLocation"></p>
+        <p id="modalPrice"></p>
+        <p id="modalSize"></p>
+        <p id="modalBedrooms"></p>
+        <p id="modalExtras"></p>
+        <p id="modalDescription"></p>
+
+        <!-- copy the bed/bath/size icons into this -->
+        <div id="modalIcons" class="icons"></div>
+
+        <!-- Contact Agent button -->
+        <button id="contactAgentBtn" class="hero-btn" style="margin-top: 15px">
+          Contact Agent
+        </button>
+      </div>
+    </div>
+
+    <!--jssssssssssssssss-->
+
+    <script src="js/realestate.js"></script>
+  </body>
+</html>
